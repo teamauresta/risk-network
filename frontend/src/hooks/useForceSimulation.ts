@@ -126,16 +126,16 @@ export function useForceSimulation({
           })
           .distance((d) => {
             if (d.edgeType === 'membership') {
-              return 80;
+              return 60;
             }
-            return 150 - d.weight * 50;
+            return 100 - d.weight * 40;
           })
       )
       .force(
         'charge',
         forceManyBody<SimNode>()
-          .strength((d) => (d.isCluster ? -repulsion * 8 : -repulsion))
-          .distanceMax(400)
+          .strength((d) => (d.isCluster ? -repulsion * 12 : -repulsion))
+          .distanceMax(500)
       )
       .force('center', forceCenter(width / 2, height / 2).strength(0.02))
       .force(
@@ -151,7 +151,7 @@ export function useForceSimulation({
     simulation.on('tick', () => {
       const positions = new Map<string, { x: number; y: number }>();
       for (const node of nodesRef.current) {
-        if (!node.isCluster && node.x !== undefined && node.y !== undefined) {
+        if (node.x !== undefined && node.y !== undefined) {
           positions.set(node.id, { x: node.x, y: node.y });
         }
       }

@@ -59,8 +59,8 @@ interface GraphState {
 
 const defaultDisplaySettings: DisplaySettings = {
   showLabels: true,
-  showSimilarityEdges: false,
-  showMembershipEdges: false,
+  showSimilarityEdges: true,
+  showMembershipEdges: true,
   nodeSize: 10,
   clusterNodeSize: 18,
   labelSize: 11,
@@ -78,8 +78,8 @@ const defaultForceSettings: ForceSettings = {
 
 const defaultAnalysisSettings: AnalysisSettings = {
   minClusterSize: 3,
-  similarityThreshold: 0.4,
-  maxLinksPerRisk: 5,
+  similarityThreshold: 0.5,
+  maxLinksPerRisk: 8,
 };
 
 const defaultColorTheme: ColorTheme = {
@@ -171,6 +171,10 @@ export const useStore = create<GraphState>((set) => ({
       nodes: state.nodes.map((node) => {
         const pos = positions.get(node.id);
         return pos ? { ...node, x: pos.x, y: pos.y } : node;
+      }),
+      clusters: state.clusters.map((cluster) => {
+        const pos = positions.get(`cluster_${cluster.id}`);
+        return pos ? { ...cluster, x: pos.x, y: pos.y } : cluster;
       }),
     })),
 

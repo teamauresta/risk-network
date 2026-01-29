@@ -69,11 +69,16 @@ class RiskAnalyzer:
         # Step 1: Generate embeddings
         logger.info("Step 1: Generating embeddings")
         embeddings = self.nlp.embed_risks(risks)
+        logger.info(f"Generated embeddings with shape {embeddings.shape}")
 
         # Step 2: Cluster
         logger.info("Step 2: Clustering")
         clustering_service = self._get_clustering_service(request.clustering)
         cluster_result = clustering_service.cluster(embeddings)
+        logger.info(
+            f"Clustering complete: {cluster_result.n_clusters} clusters, "
+            f"{(cluster_result.labels == -1).sum()} noise points"
+        )
 
         # Step 3: Find similar pairs
         logger.info("Step 3: Finding similar pairs")
@@ -82,6 +87,7 @@ class RiskAnalyzer:
             threshold=request.similarity.threshold,
             max_per_node=request.similarity.max_edges_per_node,
         )
+        logger.info(f"Found {len(similar_pairs)} similarity edges")
 
         # Convert to edges
         edges = [

@@ -44,16 +44,30 @@ class NLPService:
         """Combine risk fields into a single text for embedding."""
         parts = []
 
+        def clean_text(text: str) -> str:
+            """Clean and normalize text."""
+            if not text or text.lower() in ["na", "n/a", "nan", "none"]:
+                return ""
+            # Replace multiple newlines/whitespace with single space
+            text = " ".join(text.split())
+            return text.strip()
+
         # Weight title more heavily by repeating
         if risk.get("title"):
-            parts.append(risk["title"])
-            parts.append(risk["title"])  # Double weight
+            cleaned_title = clean_text(risk["title"])
+            if cleaned_title:
+                parts.append(cleaned_title)
+                parts.append(cleaned_title)  # Double weight
 
         if risk.get("cause"):
-            parts.append(risk["cause"])
+            cleaned_cause = clean_text(risk["cause"])
+            if cleaned_cause:
+                parts.append(cleaned_cause)
 
         if risk.get("description"):
-            parts.append(risk["description"])
+            cleaned_desc = clean_text(risk["description"])
+            if cleaned_desc:
+                parts.append(cleaned_desc)
 
         return " ".join(parts).strip()
 
@@ -69,14 +83,24 @@ class NLPService:
         """
         texts = [self.combine_risk_text(r) for r in risks]
 
-        # Filter empty texts
+        # Filter empty texts and log issues
         valid_indices = [i for i, t in enumerate(texts) if t.strip()]
         valid_texts = [texts[i] for i in valid_indices]
+
+        empty_count = len(risks) - len(valid_texts)
+        if empty_count > 0:
+            logger.warning(f"Found {empty_count} risks with no valid text content (will be assigned zero vectors)")
+            # Log IDs of empty risks for debugging
+            empty_ids = [risks[i].get('id', f'index_{i}') for i in range(len(risks)) if i not in valid_indices]
+            if len(empty_ids) <= 10:
+                logger.warning(f"Empty risk IDs: {empty_ids}")
+            else:
+                logger.warning(f"Empty risk IDs (first 10): {empty_ids[:10]}")
 
         if not valid_texts:
             raise ValueError("No valid text content found in risks")
 
-        logger.info(f"Generating embeddings for {len(valid_texts)} risks")
+        logger.info(f"Generating embeddings for {len(valid_texts)}/{len(risks)} risks with valid text")
         embeddings = self._model.encode(
             valid_texts,
             show_progress_bar=len(valid_texts) > 50,
@@ -123,11 +147,14 @@ class NLPService:
         """
         sim_matrix = self.compute_similarity_matrix(embeddings)
         n = len(embeddings)
-        edges = []
+
+        # Use a set to track unique edges
+        edge_set = set()
 
         for i in range(n):
             # Get similarities for this node (excluding self)
             sims = [(j, sim_matrix[i, j]) for j in range(n) if i != j]
+            # Sort by similarity descending
             sims.sort(key=lambda x: x[1], reverse=True)
 
             # Take top k above threshold
@@ -137,11 +164,16 @@ class NLPService:
                     break
                 if count >= max_per_node:
                     break
-                # Only add edge once (i < j to avoid duplicates)
-                if i < j:
-                    edges.append((i, j, float(sim)))
+
+                # Add edge in canonical form (smaller index first) to avoid duplicates
+                edge = (min(i, j), max(i, j), float(sim))
+                edge_set.add(edge)
                 count += 1
 
+        # Convert set to list
+        edges = list(edge_set)
+
+        logger.info(f"Found {len(edges)} similarity edges (threshold={threshold}, max_per_node={max_per_node})")
         return edges
 
     def extract_keywords(

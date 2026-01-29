@@ -122,11 +122,19 @@ async def upload_and_analyze_csv(
 
     # Convert to risks
     risks = []
-    for _, row in df.iterrows():
+    skipped_count = 0
+    total_rows = len(df)
+
+    for idx, row in df.iterrows():
         risk_id = str(row[col_map["id"]]).strip()
         description = str(row[col_map["description"]]).strip()
 
-        if not risk_id or not description or risk_id == "nan" or description == "nan":
+        # Skip empty rows, NaN values, or rows with only whitespace
+        if (not risk_id or not description or
+            risk_id == "nan" or description == "nan" or
+            risk_id == "" or description == "" or
+            pd.isna(row[col_map["id"]]) or pd.isna(row[col_map["description"]])):
+            skipped_count += 1
             continue
 
         risk = RiskCreate(
@@ -149,7 +157,7 @@ async def upload_and_analyze_csv(
             detail="No valid risks found in CSV",
         )
 
-    logger.info(f"Parsed {len(risks)} risks from CSV")
+    logger.info(f"Parsed {len(risks)} valid risks from {total_rows} total rows (skipped {skipped_count} empty/invalid rows)")
 
     # Analyze
     request = AnalysisRequest(

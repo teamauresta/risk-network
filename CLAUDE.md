@@ -10,15 +10,14 @@ Risk Network Analyzer v2 - A full-stack application for visualizing risk registe
 
 ### Full Stack with Docker (Recommended)
 ```bash
-docker-compose up --build        # Production mode (http://localhost)
-docker-compose -f docker-compose.dev.yml up --build  # Dev mode with hot reload
+docker-compose up --build                              # Production (http://localhost:3000)
+docker-compose -f docker-compose.dev.yml up --build   # Backend only with hot reload
 ```
 
 ### Local Backend Development
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate
+python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 ```
@@ -28,38 +27,69 @@ uvicorn app.main:app --reload --port 8000
 cd frontend
 npm install
 npm run dev          # Dev server at http://localhost:5173
-npm run build        # Build with TypeScript check
+npm run build        # TypeScript check + production build
 npm run lint         # ESLint
-npm run type-check   # TypeScript type checking only
+npm run type-check   # TypeScript only
 ```
+
+### Development Workflow
+For local development with hot reload on both ends:
+1. Start backend services: `docker-compose -f docker-compose.dev.yml up`
+2. In another terminal: `cd frontend && npm run dev`
+3. Frontend at http://localhost:5173, API at http://localhost:8000/docs
 
 ## Architecture
 
-**Backend (FastAPI + Python)**
-- `app/main.py` - FastAPI app initialization, CORS, startup events
-- `app/api/routes.py` - REST endpoints (`/api/v1/analyze`, `/api/v1/upload-csv`)
-- `app/services/nlp.py` - Sentence-transformer embeddings (all-MiniLM-L6-v2)
-- `app/services/clustering.py` - HDBSCAN clustering with UMAP dimension reduction
-- `app/services/layout.py` - NetworkX graph algorithms, force-directed layout
-- `app/services/analyzer.py` - Orchestrates NLP, clustering, and layout services
+### Backend Service Pipeline (`backend/app/services/`)
+The `RiskAnalyzer` in `analyzer.py` orchestrates a 4-step pipeline:
+1. **NLPService** (`nlp.py`) - Generates 384-dim embeddings via `all-MiniLM-L6-v2`, extracts cluster keywords via TF-IDF
+2. **ClusteringService** (`clustering.py`) - UMAP dimension reduction → HDBSCAN clustering (falls back to K-means if poor results)
+3. **LayoutService** (`layout.py`) - NetworkX spring layout with virtual cluster nodes as attraction points
+4. Response assembly with similarity edges and cluster metadata
 
-**Frontend (React + TypeScript + Vite)**
-- `src/App.tsx` - Main app component, state coordination
-- `src/components/GraphCanvas.tsx` - deck.gl WebGL visualization with d3-force simulation
-- `src/components/ControlPanel.tsx` - Clustering/similarity parameter controls
-- `src/components/FileUpload.tsx` - CSV drag-and-drop with column detection
-- `src/store/` - Zustand state management
-- `src/api/` - Backend API client
+### Hybrid Layout System
+The graph uses a two-phase layout:
+1. **Backend** (`layout.py`): NetworkX spring layout computes initial positions, uses virtual cluster centroid nodes to pull cluster members together
+2. **Frontend** (`hooks/useForceSimulation.ts`): d3-force runs client-side physics for 3 seconds to refine positions, then auto-stops
 
-**Data Flow**
-1. CSV uploaded → parsed in FileUpload → sent to `/api/v1/upload-csv`
-2. Backend: NLPService embeds text → ClusteringService runs HDBSCAN → LayoutService computes positions
-3. Response: nodes (with cluster assignments), edges (similarity connections), cluster metadata
-4. Frontend: d3-force simulation refines layout → deck.gl renders WebGL layers
+### Frontend State & Rendering
+- **Zustand store** (`store/useStore.ts`) - Holds nodes, edges, clusters, display/force/analysis settings
+- **useForceSimulation hook** - d3-force simulation with configurable repulsion, springs, damping
+- **GraphCanvas** - deck.gl ScatterplotLayer (nodes) + LineLayer (edges) with WebGL rendering (handles 50K+ nodes)
 
-## Key Technologies
+### API Endpoints
+- `POST /api/v1/upload-csv` - Main endpoint: CSV file → analysis response
+- `POST /api/v1/analyze` - JSON risks → analysis response
+- `POST /api/v1/similarity-matrix` - Returns full n×n similarity matrix (useful for debugging similarity issues)
+- `GET /api/v1/health` - Health check
+- `GET /docs` - FastAPI auto-generated OpenAPI documentation
 
-- **Clustering**: HDBSCAN (density-based, auto-detects K) vs v1's K-means
-- **Embeddings**: sentence-transformers (semantic) vs v1's TF-IDF (lexical)
-- **Rendering**: deck.gl WebGL (~50K nodes) vs v1's SVG (~500 nodes)
-- **State**: Zustand for frontend state management
+### Edge Types
+Two edge types exist in the graph:
+- `similarity` - Connects semantically similar risks (cosine similarity > threshold)
+- `membership` - Connects risks to their cluster centroid nodes
+
+## Key Implementation Details
+
+- **Singleton NLPService** - Model loaded once at startup via `@app.on_event("startup")`, pre-downloaded during Docker build
+- **HDBSCAN fallback** - Falls back to K-means if HDBSCAN produces <2 clusters or >50% noise points
+- **CSV column aliases** - Routes accept multiple column name variants (e.g., "risk id", "riskid", "risk_no" all map to `id`). See `routes.py` for the full alias mapping.
+- **Force simulation auto-stop** - Client-side simulation runs for 3s then stops to prevent CPU drain
+- **Cluster labels** - Generated from top 3 TF-IDF keywords per cluster
+- **L2 normalization** - Embeddings are L2-normalized, enabling cosine similarity via simple dot product
+
+## Configuration
+
+Settings in `backend/app/config.py` are loaded from environment variables (see `.env.example`):
+- `EMBEDDING_MODEL` - Sentence-transformer model (default: `all-MiniLM-L6-v2`)
+- `MIN_CLUSTER_SIZE` - HDBSCAN minimum cluster size (default: 3)
+- `SIMILARITY_THRESHOLD` - Edge creation threshold (default: 0.4)
+- `CORS_ORIGINS` - Allowed origins for CORS (defaults include localhost:3000, localhost:5173)
+
+## Testing
+
+No automated tests are currently configured. Manual testing workflow:
+1. Use the demo data button in the UI
+2. Upload CSV files to test the full pipeline
+3. Use `/api/v1/similarity-matrix` to debug embedding/similarity issues
+4. Check `/docs` for interactive API testing

@@ -174,10 +174,23 @@ class ClusteringService:
         """
         n_samples = embeddings.shape[0]
         min_k, max_k = k_range
+
+        # Scale max_k based on dataset size
+        # For large datasets, allow more clusters
+        if n_samples > 200:
+            max_k = min(25, n_samples // 10)  # Up to 25 clusters for large datasets
+        elif n_samples > 100:
+            max_k = min(20, n_samples // 8)   # Up to 20 clusters for medium datasets
+        else:
+            max_k = min(15, n_samples // 5)   # Up to 15 clusters for small datasets
+
+        max_k = max(max_k, min_k)  # Ensure max_k >= min_k
         max_k = min(max_k, n_samples - 1)
 
         if max_k <= min_k:
             return min_k
+
+        logger.info(f"Searching for optimal K in range [{min_k}, {max_k}] for {n_samples} samples")
 
         best_k = min_k
         best_score = -1
@@ -224,8 +237,16 @@ class ClusteringService:
                 n_clusters=1,
             )
 
-        # Adjust min_cluster_size for small datasets
-        if n_samples < self.min_cluster_size * 2:
+        # Adjust min_cluster_size for dataset size
+        # For larger datasets (>100), use larger min_cluster_size for meaningful clusters
+        if n_samples > 100:
+            # Scale min_cluster_size: 5-10 for medium datasets, 8-15 for large datasets
+            adjusted_min_size = max(5, min(15, int(n_samples * 0.03)))
+            if adjusted_min_size > self.min_cluster_size:
+                logger.info(f"Adjusting min_cluster_size from {self.min_cluster_size} to {adjusted_min_size} for dataset size {n_samples}")
+                self.min_cluster_size = adjusted_min_size
+                self.min_samples = self.min_cluster_size
+        elif n_samples < self.min_cluster_size * 2:
             self.min_cluster_size = max(2, n_samples // 2)
             self.min_samples = self.min_cluster_size
 
@@ -236,10 +257,13 @@ class ClusteringService:
         result = self.cluster_hdbscan(embeddings)
 
         # Fall back to K-Means if HDBSCAN produces poor results
-        if result.n_clusters < 2 or (result.labels == -1).sum() > n_samples * 0.5:
+        # For larger datasets, be more tolerant of noise (up to 30%)
+        noise_tolerance = 0.3 if n_samples > 100 else 0.5
+        if result.n_clusters < 2 or (result.labels == -1).sum() > n_samples * noise_tolerance:
             logger.warning(
                 f"HDBSCAN produced {result.n_clusters} clusters with "
-                f"{(result.labels == -1).sum()} noise points. Falling back to K-Means."
+                f"{(result.labels == -1).sum()} noise points ({(result.labels == -1).sum()/n_samples*100:.1f}%). "
+                f"Falling back to K-Means."
             )
             return self.cluster_kmeans(embeddings)
 

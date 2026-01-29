@@ -1,0 +1,310 @@
+id,Title,description,cause,url
+RFT-001,Known Spoil Contamination unexpected volumes,"There is a risk that that the Classified Spoil Contamination volumes may be in excess of most likely estimations
+exclu Asbestos  PfAS
+Hydrocarbons and other contaminants","1. Type A, B, C 
+4. Land Side Earthworks or existing building structures
+5. Air Side Earthworks or existing building structures
+6. Reinforced concrete waste
+",
+RFT-100,ABC Approval & Review Delays,"Delays in obtaining Building Permits, Works Permits, or Certificates of Compliance (BACC/WACC) from the Airport Building Controller (ABC).",ABC resource and workload constraints and a mandated 90-business-day processing period for permit applications once lodged in the ABCO platform.,
+RFT-102,Sunbury Road Intersection,Risk of additional upgrades  remediation to Sunbury Rd to remediate damage from construction traffic movements,1. additional traffic  truck movements,
+RFT-104,Oil Fuel Spills ,Risk of needing to dispose of spoil offsite as a result of oil  fuel spills - and that this spoil is also Cat B  Cat C contaminated  costs additional to dispose of at correct facility,"1. Collision of plant  equipemnt
+2. Re-fueling incident
+",
+RFT-105,Asbestos Finds - Conduits and Telecommunications,Risk of additional unexpected finds of asbestos in utilties requiring additional management over  above assumptions,1. additional contamination over & above assumptions,
+RFT-106,Design Fee Growth,Risk of growth in Principal Design Design Fee,"1. design interface issues leading to variations
+2. missed scope
+3. Scope gaps 
+4. Unexpected change
+5. Requests for additional information",
+RFT-107,Sewer Disposal,Risk that APAM  Federal Approvals are not received for sewer treatment facility at North  South Site Compound locations,1. Approvals not received,
+RFT-108,Batch Plant,Risk of protracted set up / operational breakdown of Batch Plant ,1. issues discovered during set up  operation,
+RFT-011,Pavement productivities - Shoulder Median,There is a risk that Pavement laying Productivity may be impacted by Lighting cable runs and lighting Deep lower and upper can horizintal and vertical pavement  positioning accuracy requirements.,"1. Interface with utilities
+2. Accuracy & QA limits of accuracy",
+RFT-110,Plant Workshop Activities,High risk work area with maintenance of large plant and equipment including heavy lifting temportary works plantpeople interactions dangerous chemicals stored energy.,Maintenance of earthworks and pavement plant and equipment on site,
+RFT-111,Interface of People  Heavy Construction Plan  Light Vehicles,Risk of HVLV and HVPeople incidents,- plant people and HVLV plant interactions - large volumes of heavy plant,
+RFT-112,Heavy Lifting,Requirement for heavy lifting activities of materials for bridge construction drainage pipe installation and ALER buildings,"Poor ground conditions under lifting equipment resulting in overturning of equipment.
+Inadequete plant and equipment chosen for lift resulting in overturning of equipme",
+RFT-113,Electrical Works,Risk of critical incident during electrical works and isolations including testing and commissioning,Incorrect working near live elctrical services process followed.,
+RFT-012,APAM Nominated Sub-Contractors,There is a risk of delay in being able to secure APAM nominated sub-contractors - full or partial crews - in accordance with programme assumptions,"1. limited mark availability
+2. competing priorities - O&M activities & other capital works",
+RFT-013,"Unknown Utilities - Airside 
+",There is a risk that Risk of strike of critical service AGL  ASA  HV  Telstra for Control Tower - resulting in shutdown impacts to Airport Operations,"1. unknown utilities
+2. utilities in a different as built location to survey information",
+RFT-015,"Service Isolations - Integration and Commissionin
+",There is a risk that isolations / outages required for integration are delayed or cancelled for tie-ins  (AGL / MAT99 access - HV Sub-Station Tie In / Comms),1. cancelled or delayed outages for tie in of services,
+RFT-016,"Interface with other OM actitivities across APAM site - AIRSIDE
+
+",Risk that there are interface issues with Operations  Maintenance issues resulting in productivity impacts ,"1. Interface & coordination issues
+2. Competing priorities",
+RFT-017,Existing Drainage Asset Capacity ,There is a risk that there is a requirement for upgrades and increase in capacity to existing drainage as a result of exitsing asset condition  capacity,"1. Existing asset condition
+",
+RFT-002,"Utility Strike - Minor Utility
+",There is a risk of a utility clash strike that may damage utility services,"1. utilty in diffettent location to data received
+2. additional utility  unknown",
+RFT-021,Interface with other capital works projects across APAM site,Risk that there are interface issues resulting in productivity impacts in particular ALER 2 decommissioning and ALER 3 commissioning,"1. Interface & coordination issues
+2. Competing priorities",
+RFT-022,ASA - Navigational Aids Design Interface,Risk of delay in acceptance of ASA Civil works - navigational aids - final completion,"1. Interface & coordination issues
+2. integration issues",
+RFT-023,Cut  Slope Stabilisation,Risk that additional cut  slope stabilisation is required as a result of geotechnical conditions  temporary works design,"1. geotechnical conditions vary from assumptions
+2. temporary works design requirements increase over & above assumptions",
+RFT-024,Underbore / Pipejacking beneath existing airport assets ,Risk of damage to existing runwaytaxiway surfaces due to settlement / vibration / unforseen ground conditions / existing asset condition,"1. vibration during no. 6 underbores under existing runway  taxi way
+2. existing asset condition",
+RFT-027,Existing Utlities - Protection Measures,Risk of project needing to install additional protection measures over  above assumptions for critical utilties,"1. Utilty authority requires additional protections measures in place in order to gain approvals
+
+'1. Operational buried HV Cables and planned construction crossings
+2. Existing Sewer construction crossing
+3. Existing sewer path redirection
+4. Local Glide Path Radar Buildings
+5. Existing ICT cabling
+6. Melbourne Water Main
+7. Temporary Works Related Utility impacts
+notes ",
+RFT-003,"Unknown Utilties - Landside 
+",There is a risk that unknown utility location  existing asset condition impacting staging  interface - LANDSIDE,"1. uncertainty - unavailability of survey information
+2. incomplete  aged nature of as builts
+",
+RFT-031,The Staged Handover for Practical Completion,There is a risk that staged Practical completion of asset systems or subsystems may introduce testing and commissioning complexities that need to be managed,"1. Finalisation and removal of temporary Works to and end state implementation.
+2. Progressive stages implementation of deep can intensive runwaytaxiway lighting into the pavement.
+3. HV Cabling and Substation stages Commissioning and acceptance testing
+4. ICT cabling and Systems Integration with Existing and new progressive assets
+5. Enabling works such as storm water management, settlement Pond locations and usage. ",
+RFT-032,Design Authority Approval,There is a risk that Risk that M3R JV are required to submit for an additional IFR review gate (20 days) to demonstrate evidence as to comments closed. ,"1. Multiple APAM operator stakeholders
+2. Re-submission of IRF due to significant comments received requiring evidence of close out  design solution 
+3. Uncertainty with definition of role of Concept Guardian (BECA  Arup) - owners engineer  independant verifier process unclear
+4. Additional comments & technical questions from Concept guardian re changes to reference design  departure requests",
+RFT-033,ORAT Asset Certification - approval may not be achieved as per schedule timeframes,There is a risk that the ORAT Activation or Transition may not be able to be achieved as per schedule timeframes,"1. unexpected requirements
+2. uncertainty 
+3. competing stakeholder requirements
+4. ORAT completed by others - CASA  ASA",
+RFT-042,Long Lead Pre-Cast Procurement - Domestic,Risk of delay of long lead domestic procurement items - precast bridge beams & RCP Pipes (up to class 10),"1. competing projects
+2. constrained market",
+RFT-044,Aviation Asset Closure & Commissioning,"Failure to secure runway or taxiway closures required for construction, handover, and commissioning activities.","Asset closures impact aircraft scheduling, requiring upwards of 9 months lead time for planning and consultation.",
+RFT-045,0927 3 month Runway Closure,There is a risk that Risk of completion of all activities  activities in a runway closure window may not be achievable prior to runway shortening,"1. productivity limitations - critical mass
+2. inclement weather",
+RFT-046,Overseas Procurement of critical long lead items,Risk of delay or damage during delivery of overseas procured items - HV cables kiosks AGL equipment,"1. shipping delays  macro economic events
+2. incident during transportation",
+RFT-047,Airside Closure Schedule,Risk that baseline shutdown  clousures are cancelled or shortened impacting ability to complete critical project activities ,"1. competing priorities
+2. APAM change in schedule",
+RFT-048,AGL Systems Integration Approvals,Delays in approval of systems  system integration - AGL approval ,1. AGL delay to approvals,
+RFT-052,Pavement Material Quality,There is a Risk of being able to source required volumes at consistent quality of pavement materials fine crushed rock to meet Aircraft Pavement Specifications ,"1. Quarry's not used to providing to aircraft pavement specifications
+2. Large volumes of materials required",
+RFT-053,Design Authority Approval - Airport Building Controller,There is a Risk that M3R JV are required to re-submit for an additional review period following initial IFA submission to ABC in order to obtain PERCOW,"1. incomplete design documentation & submission
+2. rejection of design solution
+3. design doesn't achieve master planning requirements",
+RFT-054,Regulator & Department Review Delays,"Delays in receiving Controlled Activity Approvals or MOWP clearances from CASA, ASA, or the Department (DITRDCSA).","Regulatory workload; 6-month lead times for controlled activities where application amendments or RfIs can ""re-start the clock"".",
+RFT-056,Design Interface Delays - ASA including Airport Fire Fighting,Risk of coordination issues during detailed design development resulting in programme,1. Interface & coordination issues,
+RFT-057,Material Re-Use - Earthworks Strategy,Risk that material re-use strategy isnt able to be achieved  import of material is required for Deep fill locations,"1. in-situ material doesn't meet specifications
+2. significant volumes of material required for deep fill locations
+3. high quantity of rock volumes",
+RFT-061,The Growling Grass Frog may need to be Relocated or Protected,There is a risk that the Arundel creek and adjacent wetland and grass areas is a habitat for the Growling Grass Fog that is a threatened species that may need to be protected. ,"1. The growling Grass Frog are classified as  a threatened species that require habitat protection in accordance with EPBC with any M3R actions requiring ministerial approval
+2. A significant portion of the Arundel creek will need to run under the M3R and its riparian grassland repurposed.
+3. A growling grass From habitat relocation plan that includes habitat connectivity rather than isolation or exposure to construction contamination handling",
+RFT-062,PFAS Leachate,Risk that PfAS leaches into surrounding waterways impacting compliance  environment protected fauna,"1. Dewatering volumes within contaminant classified excavated spoil stockpiles need to be treated to remove contaminants and protect Riparian creek water health and Fauna habitats 
+2. EPA PfAS Downstream testing",
+RFT-065,Surface Water Contamination,Risk that greater volumes of surface water require treatment for contamination over / above assumptions impacting Earthworks Strategy,1. Additional contamination- requiring treatment,
+RFT-066,Unknown Utilties - Airside Minor ,There is a risk that Unknown utility location  existing asset condition impacting staging  interface - AIRSIDE,"1. uncertainty - unavailability of survey information
+2. incomplete  aged nature of as builts",
+RFT-067,Unexpected Finds - European / Cultural Heritage Artefacts,There is a Risk of finding residual cultural heritage  european heritage items following salvage operations ,"1. residual artefacts not collected during initial salvage operations
+2. Resource limitations - Wurunjderi",
+RFT-069,Arundal Creek Main - Site Inundation,There is a risk of inundation of construction site due to severe wet weather events may result in additional water flow management,"1. severe inclement weather
+2. failure of ERSED controls",
+RFT-070,Contamination Quantities - PfAS,there is a risk that additional quantities of PfAS contaminated spoil may be found during earthworks  require treatment  disposal (Level 3 and 4),1. additional contamination over & above assumptions,
+RFT-072,Earthworks Plant Constraints - OLS / PANOPs,There is a risk that risk that OLS / PANSOPs  may lead to additional restrictions for earthworks plant over and above assumptions,1. Airside Safety requirements,
+RFT-073,Productivity - Interface of Crews,There is a risk that the interface of multiple crews earthworks  pavement  drainage  PUP in constrained site boundaries assumed productivities may not be achieved. ,NA,
+RFT-074,Earthworks Volumes - Compaction,There is a risk that consolidation of fill materials may increase in  earthworks volumes.,1. Due to settlement over-compaction,
+RFT-075,Plant  Equipment Availability,There is a risk that large sized plant  equipment may not be available locally in Victoria.,1. Unable to source Macro Roller  Mining Size earthworks machines,
+RFT-076,Specialist Plant Operators,Risk that project is not able to secure experienced large plant operators within Victoria - local to project  need to source as FIFO resources,NA,
+RFT-077,Industrial Relations,There is a risk of Project specific Industrial action impacting program productivities,"1. Client Protected Industrial Actions
+2. Project Trade Union Protected Indudtrial action",
+RFT-078,Growth in ERSED Controls and Management Requirements,There is a risk of growth in ERSED Management controls tha may be required to mitigate inclement weather and ensure continued compliance with Environmental protocols  protected species management requrie,"1. severe inclement weather
+2. failure of ERSED controls",
+RFT-079,Plant  Equipment Breakdowns  Maintenance,There is a risk of excessive plant and equipment that may breakdowns. impacting program and productivities,NA,
+RFT-008,"Airside  Landside Security Fencing Approvals 
+",Risk of delays in approval from security of proposed scope.,1. delay in approvals from APAM security ,
+RFT-080,"Risk of excessive inclement weather - Heat
+",There is a risk that Heat may prevent project activities being conducted as planned to schedule,"1. High Heat temperatures prevent pavement constrution Tarmac or Concrete
+2. Sun stroke and high temperatures exceed safe workibng conditions",
+RFT-081,Risk of excessive inclement weather - Cold,There is a risk that Cold temperatures may prevent project activities bein conducted as planned to schedule,"1. Cold temperatures are too low and prevent pavement constrution Tarmac or Concrete
+",
+RFT-082,Risk of excessive inclement weather - Wind,There is a risk that high Wind conditions may generated dust or FOD  that are a hazard for Air Operations,"1. Dust
+2. High Winds",
+RFT-083,Inclement weather - Subgrade Proof Roll,Inclement weather impacting subgrade for commencement of pavement layers - unable to pass proof roll requirements,NA,
+RFT-084,Availability from APAM nominated locations - Construction Water ,There is a risk that volumes or water pressure is limited from nominated APAM main take-off locations. ,"1. drought conditions
+2. APAM have competing priorities re potable water",
+RFT-085,Availablity of Topsoil for Landscaping,There is a risk that due to competing local projects and developments M3R are not able to source required volumes of Topsoil to complete landscaping,"1. deficit onsite
+2. competing projects & developments",
+RFT-086,Geotechnical for Utilties  Drainage Excavation,There is a risk that geotechnical conditions for drainage  utilities excavations are worse than assumed impacting productivities additional unsuitable or rock,1. additional unsuitable or rock,
+RFT-087,Risk of Inclement weather - FOG - AIRSIDE ,There is a risk of Fog impacting ability to achieve programme for airside works during fixed airsifde closures ,1. fog impacting visibility ,
+RFT-089,Airside Security Checks,There is a risk that a large number of contractors required to complete airside works may create a bottle neck in security screening over  above construction programme assumptions,"1. security & screening delays
+2. large number of contractors - more than APAM secrity can manage",
+RFT-009,"Airside Perimeter Security Fencing integrity 
+",There is a risk that Perimeter security fencing of the M3R airside footprint revisions may undergo several operational readiness activation and transition approvals.,"1. Integrity of Airside security is compromised by frequently applied amendments in the airside vs land side delineation changes required during construction before final completion.
+2. Landside construction site security access from external access gates or Airside Landside transit gates does not retain adequate Airside security requirements, integrity and continuity.",
+RFT-090,Geotechnical - Earthworks Excavation and Fill Quantities,There is a risk of additional unsuitable excavated material for re-use requiring remove  replace during earthworks,1. additional unsuitable or rock,
+RFT-091,Project Embargo Periods - Airside,There is a risk that there may be additional unforseen embargo events that place restrictions to programme,1. Unknown or predictable embargo events ,
+RFT-092,Drill and Blast restrictions placed on existing Infrastructure,There is a risk of drill  blast activities being limited that may impact productivity,"1. high vibration  noise  dust levels of drill & blast activities
+2. Airside Hazards from  fly rock, noise & vibrations - airport & utilties (including MW main) ",
+RFT-094,Arundal Creek - VE Settlement,Opportunity to reduce settlement period for Arundel Creek ,1. optimisation of ground parameters ,
+RFT-095,Aircraft Rigid Pavements - VE Pavement Types  Extent,Opportunity for optimisation of extent of Aircraft rigid pavement types,1. Reference design specifies different forms of pavement types which may be conservative,
+RFT-096,Pavements - VE Pavement Thicknesse,Opportunity for optimisation of Pavement profile extent thicknesses,"1. refining thicknesses of pavements based on CBR, concrete strength & earthworks composition
+ Optimisation of Rigid Pavement PCP Layer thickness using 5.4 Mpa flexural strength
+ Enhanced CBR using granular working platform combined modulus
+ Optimisation of subbase material to utilise Vicroads Class 3 & 4 rock
+ Optimisation of FCR Layering in flexible pavements
+ Flexible alternative to composite pavement 
+ CompositeFSV pavement alternative for expedient pavements for 4-week closure pavements (not required to be trafficked each night)",
+RFT-097,Underpass Structure - VE Precast Solutions,Opportunity for optimisation of underpass structure,1. design optimisation  changes to precast solutions (precast arch alternative  Integral Super-T  Top Down Voided Slab),
+RFT-098,Suspected Act of terrorism,Risk of delays  interruptions as a result of suspected act of terrorism imacting security  APAM OM controls,"1. Suspected act of terrorism wihtin airport boudaries
+2. Esclation of a security breach",
+RFT-099,Industrial Relations - APAM OM,There is a risk of APAM OM Industrial action impacting access program  productivities,1. APAM O&M personnel - protected Industrial Actions impacting access and WSO availability & security clearences,
+CTAN-C05,Pavement Rework/Soft Spots due to Weather,"Risk that inclement weather causes rework and soft spots in earthworks or pavement layers (e.g., Class 3 Crushed Rock) during the construction period for access roads and haul roads.",Inclement weather causing soft spots in earthworks or pavement layers .,
+CTAN-C06,Delayed Edge Protection on Retaining Walls,Risk of a safety hazard (leading edge) where precast concrete barriers are installed later than the capping beam and lagging on the retaining wall system (Operations Road Realignment).,Barriers are installed after the completion of the lagging.,
+CTAN-C07,Concrete Slump/Quality Failure (Barriers),"Risk that the concrete used for slipform barriers (e.g., Vic Roads F-shape TL-5) has a slump result outside the permissible tolerance limits specified in AS 1379, leading to material rejection or quality defects.",Concrete used for slipform barriers has a slump result outside permissible tolerance limits (AS 1379).,
+CTAN-C08,String Line Movement during Slipform,"Risk that the surveyed string line, critical for the alignment of slipform concrete barriers, is accidentally moved out of position by workers or vehicles during the extrusion process, resulting in alignment errors.",Surveyed string line accidentally moved out of position by workers or vehicles .,
+CTAN-C09,Water Ingress in Underpass Excavation,Risk of significant water inflow or inundation in the deep excavation required for the underpass raft slab before the permanent drainage system is fully installed.,Water inflow/inundation in deep underpass excavation .,
+CTAN-C10,PCC Formwork Productivity Constraint,Risk of slowed productivity for the construction of Portland Cement Concrete (PCC) rigid pavement runs due to the required minimum curing time for the forms to remain in place.,Forms are required to remain in place for a minimum of 12 hours after placement of concrete.,
+CTAN-C11,Haulage Damage to Granular Pavement,Risk that heavy haulage vehicles (highway trucks > 30T ADT) used to deliver crushed rock or subbase materials damage the underlying granular layers during pavement construction.,Use of highway trucks (> 30T ADT) to haul materials from stockpile/quarry.,
+CTAN-C12,Uncovered Subsurface Drainage Trenches,"Risk that subsurface drainage trenches (pavement drainage) are left exposed at the end of a shift, posing a safety hazard, impacting ERSED requirements, and risking inundation from standing water.",Trench left exposed at the end of a shift.,
+CTAN-C13,Trench Collapse in Deep Drainage,Risk of trench collapse and resulting worker safety issues during excavation for drainage pits and pipes deeper than 1.5m or 2m.,Excavation for drainage pits/pipes deeper than 1.5m or 2m without adequate support.,
+CTAN-C14,Rock Impact on Drainage Excavation,"Risk of encountering substantial rock volumes in deep drainage cuts (especially in the South Existing Taxiway and Energy Dissipator Outlet areas), significantly delaying pipe laying productivity.","Encountering substantial rock volumes in deep drainage cuts (South Existing Taxiway, Energy Dissipator Outlet areas).",
+CTAN-C15,Heavy Crane/Hardstand Requirement for Drainage,"Risk that the installation of large drainage pipes (1500mm diameter or greater) requires specialized heavy craneage and extensive temporary hardstand, impacting logistics and cost.",Installation of large diameter pipes (1500mm diameter or greater).,
+CTAN-C16,Airside Open Trench/Stockpile FOD Risk,"Risk of Foreign Object Debris (FOD) or operational hazards caused by open drainage trenches or material stockpiles in airside areas (e.g., near RWY 09/27 shortening works).",Open trenches or material stockpiles in airside areas .,
+CTAN-C17,Existing Drainage Pit Condition for Tie-ins,"Risk that new drainage pipes cannot connect to existing pits because the existing pits are in poor condition or require excessive cleaning, creating time delays and requiring confined space entry.",Poor condition or excessive cleaning required for existing pits.,
+CTAN-C18,Underpass Fire Safety Design Gaps,"Risk of non-compliance due to outstanding assessments for the underpass structure regarding flame trap, hydrocarbon design fire resistance requirements, and blast analysis.","Flame trap, hydrocarbon design fire resistance requirement and blast analysis is still to be assessed.",
+CTAN-C19,Jetblast Impact on Runway 16R Navaids,"Risk that the pre-threshold area of Runway 16R results in high jetblast on the localizer, potentially impacting the Near Field Monitor (NFM) which cannot be subjected to significant jet blast.",High jetblast on the Runway 16R localizer in the pre-threshold area.,
+CTAN-C20,Underpass Access Door Conflict,Risk that the proposed access door between landside and airside in the underpass structure cannot reconcile the need to be accessible during emergencies versus the requirement to remain securely locked to separate landside and airside.,Conflict between the need for emergency accessibility versus secure separation of landside and airside.,
+CTAN-C21,Optimisation of Access/Verge Drainage,"Opportunity to adopt a free draining verge (outside of the runway formations) for perimeter and access roads by adjusting grade lines, potentially improving construction efficiency and removing the need for subsurface drainage.",Adjusting grade lines when outside of the runway formations.,
+CTAN-C22,Removal of Northern Bridge Central Pier,"Opportunity for optimization of the Northern Bridge structure by removing the central pier and utilizing a deeper Super-T beam, potentially reducing construction complexity and time.",Structural simplification by removing central pier and using deeper Super-T beam.,
+NA-C001,Unknown / uncertain services - incl. services with no / limited information,"Risk of unknown utilities or services being in different locations than data received, impacting staging, excavation, and potentially leading to strikes. This covers landside and minor airside uncertainty.",Incomplete or inaccurate existing utility records; unverified locations.,
+NA-C002,HV feeder - LV,"Risk of clashes, failures, or delays associated with the staged HV feeder installation (new feeders N and M) and its interaction with existing LV networks or critical substations during changeover and commissioning.",Complex HV/LV interface; condition or configuration of existing assets.,
+NA-C003,ICT interface. APAM building /CCTV installation; ASA equipment installation,"Risk of delays or non-conformance due to complex interfaces during the installation and integration of ICT systems, including AGLCMS development with Airservices Australia (ASA), and installation of CCTV, PAPI, and SMR units in coordination with civil works.",Multiple stakeholders; unclear responsibilities; incomplete design.,
+NA-C004,Time for approval / commissioning,"Risk of schedule delay due to protracted approval periods (e.g., ABC PERCOW or Occupation Certificate), or T&C complexities related to phased system handovers and isolation requirements.",Long statutory/authority approval cycles; phased handovers.,
+NA-C005,AGL installation and interface with pavement installation,Risk that Pavement laying Productivity may be impacted by Lighting cable runs and deep base can vertical positioning accuracy requirements within the crushed rock layers.,Tight tolerances for AGL elements; sequential dependency with pavement.,
+NA-C006,Initiatives and value adding - pavement design and optimisation,"Opportunity to optimize the extent of rigid pavement types (RFT-95) or improve productivity by seeking dispensation from prescriptive requirements (e.g., polythene sheeting for forms).",Ability to refine design vs prescriptive requirements.,
+NA-C007,Batch plant and quality,Risk of Batch Plant setup or breakdown (RFT-108) or being unable to source consistent quality of pavement materials (RFT-52).,Equipment failure; inconsistent quarry supply; limited redundancy.,
+NA-C008,Querry (Quarry),"Risk related to sourcing required volumes of quality pavement materials (e.g., fine crushed rock) from quarries not typically accustomed to Aircraft Pavement Specifications.",Quarries not meeting spec; supply variability.,
+NA-C009,Inclement weather impact,"Risk of disruption to airside productivity, high winds/FOD, or rework and soft spots in earthworks/pavement layers due to inclement weather.","High winds, rainfall, stormwater affecting work areas.",
+NA-C010,Arundal drain (deep),"Risk associated with the large, deep drainage construction for the Arundel Creek culvert (~562m of 2100mm pipe), requiring significant earthworks/fill (~12m fill prior to pipe installation).",Large trench depth; high water table; long alignment.,
+NA-C011,"Program - drainage, flow of water and runoff management","Risk that ERSED management controls are insufficient for extreme weather or fail, leading to contaminated surface water runoff, especially around Arundel Creek (RFT-62, RFT-78).",Insufficient capacity of erosion control systems.,
+NA-C012,Security of construction site (plans in place to control - access to airside),"Risk of access control failure, security breaches, or bottlenecks during airside security checks for workers [RFT-89]. The requirement for high security fencing with CCTV and gatehouses is part of the scope.",High worker volumes; limited processing capacity; equipment failures.,
+NA-C013,Interface with envron for ground prep,"Risk of delays/rework due to interfaces with environmental constraints (Growling Grass Frog, Native Vegetation, PFAS, Heritage) during site clearing and ground preparation.",Environmental protection requirements; approvals; sensitive areas.,
+NA-C014,Stabalisation of low CBR material for perimeter road (additional importation of materials to replace),"Risk that unsuitable subgrade (low CBR material) for the perimeter/access roads requires intervention (remove/replace) leading to additional time/cost for stabilisation and material import (e.g., rock blankets, lime stabilisation).",Weak subgrade; weather effects; variable material quality.,
+NA-C015,Southern perimeter road - utility connection to ALER building (general risk for both ALER),"Risk of interface or protection issues during connection of HV/LV, comms, firemain, sewer, and water services within the concrete-encased ""utilities corridor"" of the Southern Access Road and their tie-in to ALER 6/7.",Congested utility corridor; unclear protection requirements.,
+NA-C016,Risk of recoating or repair / protection of the Melbourn water asset north of site 1150 MSCL pipe (1978 with 100 years design life). ,"Risk of damage or required recoating/repair to the critical Melbourne Water Main (DN1150) during construction adjacent to the mass haul route, requiring costly protection measures.",Proximity of haul route; shallow cover; ageing asset.,
+ECI-C001,Sewer / water outside of project boundary (possible council / private land),"Risk that required relocation or new connections for water and sewer assets are constrained by external authority (e.g., Western Water, Council) or private land ownership/access requirements outside the immediate APAM project boundary, causing delays or scope changes.",Third-party land requirements; authority constraints.,
+ECI-C002,Alignment of pavement price and CTAN,"Risk that the construction methodologies detailed in the C-TANs (e.g., specialized plant requirements, multi-layer curing times, specific quality controls) impose a higher cost or lower productivity than assumed in the original tender price/estimate base, leading to cost overrun.",CTAN prescriptive requirements; specialised plant; long curing times.,
+ECI-C003,Compound Approval & Site Establishment,"Delays in establishing SP0 site compounds, batch plants, and temporary facilities.","Requirement for ABC Permits (90 days), tree removal permits (10 days), and potential PFAS management approvals.",
+ECI-C004,Utilities (Telstra and fire) interface for bridge construction (waiting for Telstra response),Risk of schedule delay due to slow or protracted response/cooperation from non-contestable utility providers (like Telstra) required for the relocation or confirmation of alignment for services (Telstra line) interfacing with the underpass/bridge construction.,Third-party dependency (Telstra); long lead times.,
+ECI-001,Northern Access Road over the Melbourne Water Main,"Construction of the Northern Access Road over the Melbourne Water large diameter transfer Main is subject to Melbourne Water performance requirements, which are likely to include extensive asset protection requirements and monitoring during construction (RFT-027 / BECA-022)","1. Temporary construction traffic load
+2. Impacts from Blasting the Granodiorite",
+ECI-002,Rock Encountered in Deep Drainage Trenching,"Risk of encountering unassumed or substantial Newer Volcanic Rock or Bulla Granodiorite during trench excavation for drainage pipes (particularly in Runway North, South Existing Taxiway, and Energy Dissipator outlet areas).","Geotechnical conditions vary from assumptions, specifically concerning the depth and hardness of Newer Volcanic Rock or Bulla Granodiorite materials.",
+ECI-003,Trench Collapse/Worker Safety in Deep Excavations,"Risk of trench collapse during deep drainage installation (pits up to 7.9m deep) or open trenches exceeding 1.5m, posing a direct threat to worker safety.",Lack of adequate temporary works (shoring/benching) in trenches deeper than 1.5m; placing excessive construction loads/plant near trench edges.,
+ECI-004,Productivity Impact from Blasting Restrictions,"Risk that restrictions on drill and blast activities (required for approx. 450k bcm³ of rock excavation) due to vibration, noise, dust, or fly rock, limit working hours or intensity.","High vibration/noise/dust levels near existing sensitive infrastructure (e.g., Melbourne Water main, Navaids); potential for airside hazards (fly rock).",
+ECI-005,Disruption from Construction Height/Crane Usage near Airspace,"Risk of delays or operational disruption due to large plant (e.g., 100T crane or piling rigs) exceeding height restrictions imposed by OLS (Obstacle Limitation Surfaces) or PANS-Ops surfaces.","Required equipment (cranes, piling masts up to 22m) exceeding the 7m height restriction near existing or prescribed airspace.",
+ECI-006,HV/LV and People/Plant Incidents on Haul Routes,"Risk of safety incidents involving pedestrians, light vehicles (LV), and heavy vehicles (HV) due to large volumes of heavy plant operating across multiple congested work fronts.",Plant-people and HV/LV plant interactions; large volumes of heavy plant; insufficient segregation of traffic types.,
+ECI-007,Airside Access and Security Bottleneck,"Risk that the process of Airside Security Checks creates bottlenecks for the large number of contractors required for airside works, resulting in lost productive time.",Security and screening delays; APAM security may not be able to manage the large peak workforce volume; compulsory site crew travel to landside sheds for breaks.,
+ECI-008,Contamination Transfer and Water Treatment Failure,"Risk that PFAS contamination (Levels 3 and 4) is spread to clean areas or leaches into Arundel Creek, compromising protected habitats and requiring expensive water treatment.","PFAS contaminated material is at the surface, competing with the need for clean fill; failure of ERSED controls during severe weather events.",
+ECI-009,Asset Handover Delay by ASA Resource Availability,Schedule delays in handing over physical assets (conduits and foundations) installed for Air Services Australia (ASA) in the Civil Service Road due to ASA resrouces availability issue.,ASA don't have sufficient resources for asset handover or ASA don't prioritise availability to support essential site witnessing activities,
+ECI-010,AGL Subcontractor Unable to Adquately Staff the Installation Work,"The scope of work for ADB and Avionics may exceed their local construction capacity. If the subcontract is not propoerly staff the installation team, the JV may end up taking some part of the work which will introduce commerical complications and possible program delay.",ADB and Avionics don't have enough capacity in Australia to staff their scope of work,
+ECI-011,Unclear CASA Commissioning Responsibility (Interim Risk),"Delays in commissioning activities and final handover due to the undefined boundary of responsibility concerning Civil Aviation Safety Authority (CASA) approvals. Commissioning activities, such as testing the PAPI lights on the runway on 09/27, require a ""flight test and needs to be approved by casa"", but the contractor's precise responsibility limit is ""not clear"".
+This is an interim risk for ECI to be closed before submission",Yet to be clarified and agreed commissioning responsbility with CASA,
+ECI-012,Pavement Damage from Temporary AGL Protection,"Risk of damaging finished pavements, including potential cracking, due to construction protection measures over AGL light cans.","Steel plates are temporarily placed ""on top instead of the light"" to shield the light bases from construction traffic.",
+ECI-013,Ambiguity in BOM Interface Role (Interim Risk),Uncertainty regarding the main contractor’s exact role and responsibilities concerning the Bill of Materials (BOM) process,"The contractor provides input to the BOM, but the precise scope demarcation lacks formal clarity.",
+ECI-014,Installation and Commissioning of Novel Flywheel UPS System,"Risk associated with the installation and commissioning of the new HV/LV flywheel UPS system, intended to provide ""60-second standby"" power",Novel implementation of flywheel UPS system in Australia and for APAM,
+ECI-015,Melbourne Water (MW) Consent & Blasting,Delays in obtaining written consent for blasting or works adjacent to MW water mains.,Need for MW asset protection; blasting activities trigger complex MOWP reviews and utility-specific consent requirements.,
+ECI-016,Cancellation of airside works due to poor visibility or other operational reasons,,,
+ECI-017,ASA/AIRAC Alignment,Failure to align the completion of works with the ASA aeronautical data update cycle.,"High-impact changes (e.g., new runway) must be published in the AIP on specific AIRAC dates, which are set up to 2 years in advance.",
+ECI-018,Encroachment Outside Approved Footprint,Work occurring outside the approved impact area boundary defined in the MDP.,Inadequate environmental design or construction planning.,
+ECI-019,"Unsuitable Material Reuse (NV RS, BG XW, OV XW)","Material units that may not meet engineering requirements without modification, such as specific rock/weathered materials (e.g., Newer Volcanics (NV RS), Bulla Granodiorite (BG XW), Older Volcanics (OV XW)).","NV RS, BG XW, or OV XW materials may not meet requirements for use as Type 2B or Type 2C without lime stabilisation.",
+ECI-020,AF-G11 Material Processing Risk,Potential difficulty in reusing AF-G11 fill material due to composition and variability.,"AF-G11 fill material contains anthropogenic materials, rock fragments, wood, and other deleterious materials. Material may be too fine-grained.",
+ECI-021,Oversize Particles in Fill/Topsoil,Materials generated may contain a high proportion of oversize particles requiring additional work.,High proportion of granular material or oversize particles in fill and topsoil materials.,
+ECI-022,Low CBR Material Swell,Material designated as Type 2B (NV RS in deep fill) may exhibit undesirable CBR properties.,Available data suggests some low CBR materials and excessive swell potential (particularly NV RS).,
+ECI-023,Geological Unit Variability,Risk associated with the variability in the extent and thickness of different geological units across the site.,Natural geological conditions and inherent spatial uncertainty.,
+ECI-024,Gate 11 Composition Uncertainty,Limited geotechnical information regarding the composition of the Gate 11 Facility stockpiles.,Lack of comprehensive investigation data at the RD Phase.,
+ECI-025,Heave or Shrinkage of Type 2B Clay Fill,Potential for long-term heave (swelling) or shrinkage of clay fill used as Type 2B material.,"The use of materials with high plasticity, or if the material is not placed and compacted close to the SOMC (Standard Optimum Moisture Content) or maintained at a stable moisture content in the long term.",
+ECI-026,Subsurface Data Deficiency (CBR/Swell),Limited information about subsurface conditions in some areas at the RD Phase.,"Lack of specific laboratory test results for CBR and CBR Swell values at high surcharge loads, equivalent to pavements that are 0.6 m and 1.2 m thick.",
+ECI-027,Earthworks Delay: Weather Impact,The potential impact of adverse weather conditions (wet and dry/windy) on earthworks operations.,Natural meteorological conditions (wet/dry/windy).,
+ECI-028,Earthworks Delay: Water Availability,Risk concerning the availability of water during construction.,Insufficient external supply or logistical constraints.,
+ECI-029,Earthworks Risk: Material Supply,Risk relating to the reliable availability of construction materials.,Potential variability in different geological units affects predictable material quantities/quality.,
+ECI-030,Earthworks Delay: QA/QC Turnaround,Risk associated with the turnaround times for Quality Assurance (QA) and Quality Control (QC) checks.,Time required for laboratory processing and verification.,
+ECI-031,Sustainable Materials/Technologies,"The use of sustainable materials and renewable technologies, such as solar, can reduce the operational and delivery costs for projects, while promoting environmental sustainability.
+To detail technologie and conduct assessment respectively in line with estimates",Adoption of renewable technologies and materials.,
+ECI-032,Sustainability Initiative Costs,"Sustainability initiatives, while environmentally beneficial, may increase project delivery costs and timeline due to added complexity or specialised materials.
+To detail initiatives and assess respectively in line with estimates",Complexity of sustainable practices and technologies.,
+ECI-033,Material Price Fluctuations,"Fluctuations in material prices and availability may impact project budgets and timelines, particularly for items like bitumen and cement.
+To detail the materials / packages and cause of price changes. 
+ - procurement risk or
+ - estimate uncertainty","Market volatility, inflation, and supply chain issues.",
+ECI-034,Regulatory Changes and Non-Compliance,"Changes in sustainability regulations, such as NGERs (National Greenhouse and Energy Reporting Scheme) or Corporations Act requirements, may lead to non-compliance if not addressed.
+Keep this generic. Check with Nick on commercial relief in the contract",Evolving regulatory landscape and insufficient compliance measures.,
+ECI-035,Insufficient Waste Management Practices,"Insufficient waste management practices can lead to environmental pollution, degradation of natural ecosystems, and non-compliance with sustainability standards.
+To be reworded in a positive way BAU, no impact expected. For management only.","Lack of proper waste segregation, recycling, and disposal processes.",
+ECI-036,Non-Conformance of Recycled Materials,"Recycled materials or biomaterials may fail to meet project design specifications, which could negatively impact asset performance and durability.
+To be reworded in a positive way BAU, no impact expected. For management only.",Insufficient testing by suppliers or inconsistent material quality.,
+ECI-037,Water Scarcity,"Increasing water scarcity and competition for resources may affect availability for construction tasks such as dust suppression, concrete curing, and landscaping.","Drought, climate change, and regional water supply limitations.",
+ECI-038,Air and Water Pollution,"Construction activities may lead to air and water pollution, causing harm to ecosystems, regulatory penalties, and health impacts on local communities.
+To be detailed to activities causing this risk. no impact expected. For management only.","Dust, emissions, sediment runoff, and accidental spills during construction.",
+ECI-039,Habitat Loss,"Construction activities may lead to habitat destruction and biodiversity loss, affecting native species and causing project delays due to environmental concerns.
+To be detailed to activities causing this risk. no impact expected. For management only.","Removal of vegetation, land clearing, and disruption of ecosystems.",
+ECI-040,Climate Change and Extreme Weather,"Climate change and increased frequency of extreme weather events (e.g., floods, heatwaves) may disrupt construction activities and pose safety risks.
+To be detialed to address construciton / program assumptions and commercial entitlement in extreme scenario",Global climate changes and unpredictable weather patterns.,
+ECI-041,Hazardous Material Exposure,"Exposure to hazardous materials, such as PFAS contamination, can pose health risks to workers and the community, as well as lead to regulatory breaches and costly remediation.
+To be reworded in a positive way BAU, no impact expected. For management only.",Presence of contaminants on-site and improper handling.,
+ECI-042,Limited Sustainable Material Availability,"Limited availability of sustainable materials, such as recycled concrete or low-carbon steel, may impact sustainability targets and increase project costs.
+To detail specific materials and assess respectively in line with estimates",Insufficient supply chains and supplier capacity.,
+ECI-043,Community Dissatisfaction,"Lack of community engagement can lead to dissatisfaction, opposition to projects, and public protests, delaying progress and harming reputation.
+To detail key stakeholders and detail comms management stategy
+To be reworded as an opportunity -efficient and effective stakeholder and community engagement and management",Inadequate consultation and feedback mechanisms.,
+ECI-044,Poor Waste Management,"Inefficient waste management and resource recovery can lead to excessive landfill use, missed recycling opportunities, and non-compliance with sustainability standards.
+To be reworded as an opportunity in conjunction with detailed mass haul management strategy",Lack of robust waste management systems and oversight.,
+ECI-045,Air Quality: Dust and Emissions (including PFAS dust),"Earthworks, excavations, hauling, and operating heavy plant.","Generation of dust (PM10/PM2.5), particularly from PFAS-impacted soils. Exhaust emissions.",
+ECI-046,Blasting Impacts,Use of explosives during project activities.,"Blasting impact on soil, noise, vibration, and ecology.",
+ECI-047,Contamination: Buried Asbestos (ACM),"Disturbing or excavating suspected buried Asbestos Containing Material (ACM) during earthworks in high-risk zones (e.g., former buildings, landfills, disturbed land, AECs 1–17).",Earthworks below surface level in areas designated as having a 'Likely' or 'Known' asbestos potential.,
+ECI-048,Contamination: Imported Material Risk,Acceptance of imported soil or engineered materials that do not meet acceptance requirements.,Failure to adequately check and classify incoming material.,
+ECI-049,Contamination: PFAS Migration / Mobilisation,Excavation and movement of widespread PFAS-impacted soil (PFOS and PFHxS).,Insufficient segregation of high (Level 3/4) and low/fill impacted soil. Disturbing PFAS material increases potential for mobilisation via runoff/dust.,
+ECI-050,Contamination: Surface Asbestos / Fly Tipping,"Disturbing visible surface asbestos debris (e.g., fibre cement sheet, moulded cement debris) in creek beds, former laydown areas, or due to fly tipping.",Construction activities in surface remediation areas (AOC A-H).,
+ECI-051,Contamination: Unexpected Sub-Surface Finds,"Encountering previously undetected contaminants (CoPC) or materials, including asbestos, TPH, OCPs, or heavy metals.",Failure of the pre-construction sampling and analytical program to detect certain sub-surface contamination. Excavation within or adjacent to identified 40 Areas of Environmental Concern (AEC).,
+ECI-052,Cultural and European Heritage Damage,Ground disturbance activities in areas containing sites or items of heritage significance.,Failure to comply with Heritage Management Plans or accidental disturbance during construction.,
+ECI-053,Ecological Impact: EPBC Fauna & Habitat,"Loss of habitat or injury to protected fauna (e.g., Growling Grass Frogs).","Noise and vibration impacts (e.g., from blasting). Contaminated sedimentation in waterways (habitat).",
+ECI-054,Flora and Fauna / Habitat Loss,"Earthworks and clearing activities, particularly near protected ecological communities.","Potential over-clearing of EPBC nationally significant vegetation. Loss of habitat for fauna, or impacts from noise and vibration during construction (e.g., blasting).",
+ECI-055,Hazardous Substances Spill,"Storage, handling, transfer, or use of fuels, oils, lubricants, compressed gases, paints, and chemicals.","Vehicle/plant leaks, or spills near sensitive receptors (drains, waterways, EPBC vegetation).",
+ECI-056,Noise and Vibration Impacts,Construction activities involving heavy machinery and equipment.,Generation of noise and vibration.,
+ECI-057,Regulatory Compliance Failure,Non-compliance with statutory requirements or failure to secure necessary approvals.,"Incorrect classification or disposal of waste spoil offsite (Reportable Priority Waste - RPW). Breaching EPBC Permit conditions (e.g., over-clearing MNES).",
+ECI-058,Waste Management / FOD Hazard,"Generation of general waste, packaging, and green waste. Poor stockpile management.",Failure to segregate waste or poor storage practices. Waste materials becoming Foreign Object Debris (FOD) airside.,
+ECI-059,Water Quality: Contaminated Water Discharge,"Accumulation of stormwater, construction water, or groundwater that requires disposal or reuse.",Dewatering or discharge of water that does not meet established water quality standards or risk-based criteria for PFAS.,
+ECI-060,Water Quality: Sediment and Erosion Runoff,Stripping topsoil and extensive earthworks expose large areas. Drainage works and working over waterways.,Sediment and erosion risk from site clearing and ground reshaping (cut and fill).,
+ECI-061,Water Quality: Water Reuse Risk,Using captured site water for dust suppression or compaction.,Failure to meet Human Health and Environmental Risk Assessment (HHERA) requirements for water reuse.,
+ECI-062,Non-Award of Delivery Phase (ECI Investment Loss),"The Principal may elect not to proceed with the Delivery Phase or may award the works to a competing contractor, despite the Contractor having performed the Early Contractor Involvement (ECI) services.","The Principal retains absolute discretion to decide not to proceed with the ECI Phase or commence the Delivery Phase, change the procurement strategy, or engage a third party. The Principal may accept or reject any offer at its absolute discretion.",
+ECI-063,ECI Phase Cost Overrun,"Costs incurred during the ECI Phase may exceed the maximum agreed limit, rendering further expenditure non-recoverable.","The ECI Phase Contract Sum (based on a schedule of rates) and ECI Phase Disbursements are capped at the ECI Phase Contract Sum (Cap), which is $12,000,000.00 ex. GST.",
+ECI-064,Exposure to Undisclosed Site Conditions,"The Contractor assumes significant risk for the condition of the site, including contamination and unidentified existing infrastructure, limiting recovery for cost or time impacts.","Encountering physical Site Conditions that are not contemplated by the Contract [182(a)(i)]. Contamination other than specific exempted types (e.g., Level 5 PFAS, excess Asbestos/Hydrocarbons) [183(a), 187(a)].",
+ECI-065,Delay Liquidated Damages (General),Failure to achieve practical completion of the Works or separable portions by the due date results in monetary penalties.,Delay caused by the Contractor or a non-qualifying cause of delay (QCD). Failure to meet strict conditions precedent for claiming an Extension of Time (EOT).,
+ECI-066,Operational Impact Liquidated Damages,Defects or Substantial Failures having an impact on Airport Operations during the Defects Liability Period or Operational Impact Liability Period (7 years) incur penalties.,"A defect causes an Operational Impact (inhibiting Principal's ability to operate Melbourne Airport, increasing costs/liability, or diminishing revenue).",
+ECI-067,Fixed Closure Period (FCP) Penalties,Failure to complete planned Work Under Contract (WUC) or temporary works within a Contractor’s Fixed Closure Period results in abatement penalties.,Contractor delay or non-performance during the allocated fixed closure time (Fixed Closure Period Delay). The scheduled time for Fixed Closure Period Completion is generally not subject to adjustment.,
+ECI-068,Loss of Claims due to Time Bar,The Contractor is precluded from recovering time or costs if mandatory notice and submission requirements are not met strictly.,"Failure to provide notice of delay within 5 Business Days, or failure to submit a detailed EOT claim within 15 Business Days, or failure to notify the Contract Administrator regarding directions constituting a variation within 5 Business Days.",
+ECI-069,Liability Exceeding General Cap,"Contractor liability is generally capped, but several critical areas remain excluded from this limitation, exposing the Contractor to potentially unlimited damages.","Claims arising from: Wilful Misconduct, Wilful Default, abandonment, personal injury/death, property damage (other than the Works), IP infringement, and breaches of specific clauses (e.g., Environment, OHS, Confidential Information).",
+ECI-070,Inadequate Subcontractor Management,"The Contractor remains solely liable for the acts, defaults, and omissions of all its Personnel (including Subcontractors), even if they are selected subcontractors.",Non-performance or default by Subcontractors. Failure to ensure Subcontractors pay their employees/consultants.,
+ECI-071,Software Deployment Delay,The Software for SP1 is developed in Australia and requires travel to Belgium and then approval back in Australia. The risk of the development time is delayed.,SP1 software development time is delayed due to interntional collaboration and approval process,
+ECI-072,Fauna Relocation Approval Delays,Extended time needed to secure authorisations to move native fauna more than 100m from the clearing site.,No statutory timeframe; proposals are only reviewed during quarterly DEECA panel meetings.,
+ECI-073,Groundwater Extraction Licensing -South Rural Water,Delay in obtaining a 'take and use' licence for construction water from bores or dams.,Extraction may trigger neighbour notifications and agency referral requirements.,
+ECI-074,,,,
+ECI-075,,,,
+ECI-076,,,,
+ECI-077,,,,
+ECI-078,,,,
+ECI-079,,,,
+ECI-080,,,,
+ECI-081,,,,
+ECI-082,,,,
+ECI-083,,,,
+ECI-084,,,,
+ECI-085,,,,
+ECI-086,,,,
+ECI-087,,,,
+ECI-088,,,,
+ECI-089,,,,
+ECI-090,,,,
+ECI-091,,,,
+ECI-092,,,,
+ECI-093,,,,
+ECI-094,,,,

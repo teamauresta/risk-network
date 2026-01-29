@@ -259,6 +259,11 @@ export function ControlPanel() {
               onChange={(value) => updateAnalysisSettings({ maxLinksPerRisk: value })}
             />
             <CheckboxRow
+              label="Show membership edges"
+              checked={displaySettings.showMembershipEdges}
+              onChange={(checked) => updateDisplaySettings({ showMembershipEdges: checked })}
+            />
+            <CheckboxRow
               label="Show similarity links"
               checked={displaySettings.showSimilarityEdges}
               onChange={(checked) => updateDisplaySettings({ showSimilarityEdges: checked })}
@@ -273,8 +278,12 @@ export function ControlPanel() {
                 Rebuild clustering
               </button>
             </div>
-            <p className="text-xs text-muted pt-2">
-              Tip: raise threshold to reduce clutter; lower min cluster size to merge groups.
+            <p className="text-xs text-muted pt-2 border-t border-white/10 mt-2">
+              <strong>Membership edges:</strong> Connect risks to their cluster centers (thin, faint).
+              <br />
+              <strong>Similarity links:</strong> Connect semantically similar risks (thick, bright).
+              <br /><br />
+              Tip: Raise threshold to reduce clutter; lower min cluster size to merge groups.
             </p>
           </div>
         )}

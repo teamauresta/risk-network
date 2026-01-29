@@ -156,10 +156,10 @@ export function GraphCanvas({ width, height }: GraphCanvasProps) {
           d.edgeType === 'membership'
             ? hexToRgb(colorTheme.membershipEdge)
             : hexToRgb(colorTheme.similarityEdge);
-        const alpha = d.edgeType === 'membership' ? 40 : Math.floor(30 + d.weight * 60);
+        const alpha = d.edgeType === 'membership' ? 30 : Math.floor(60 + d.weight * 120);
         return [...baseColor, alpha];
       },
-      getWidth: (d) => (d.edgeType === 'membership' ? 1 : 1 + d.weight * 2),
+      getWidth: (d) => (d.edgeType === 'membership' ? 0.5 : 1.5 + d.weight * 2.5),
       pickable: false,
     }),
 
