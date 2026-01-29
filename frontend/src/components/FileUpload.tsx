@@ -5,7 +5,7 @@ import { uploadAndAnalyzeCSV } from '../api/client';
 import { useStore } from '../store/useStore';
 
 export function FileUpload() {
-  const { setData, setLoading, setError, loading, setSimulationRunning } = useStore();
+  const { setData, setRawRisks, setLoading, setError, loading, setSimulationRunning, analysisSettings } = useStore();
   const [dragActive, setDragActive] = useState(false);
 
   const onDrop = useCallback(
@@ -23,9 +23,9 @@ export function FileUpload() {
 
       try {
         const result = await uploadAndAnalyzeCSV(file, {
-          minClusterSize: 3,
-          similarityThreshold: 0.4,
-          maxEdgesPerNode: 5,
+          minClusterSize: analysisSettings.minClusterSize,
+          similarityThreshold: analysisSettings.similarityThreshold,
+          maxEdgesPerNode: analysisSettings.maxLinksPerRisk,
         });
 
         setData({
@@ -34,6 +34,22 @@ export function FileUpload() {
           clusters: result.clusters,
           metadata: result.metadata,
         });
+
+        // Store raw risks for rebuilding - extract from nodes
+        const rawRisks = result.nodes.map(n => ({
+          id: n.id,
+          title: n.title,
+          description: n.description,
+          cause: n.cause,
+          url: n.url,
+          cost: n.cost,
+          likelihood: n.likelihood,
+          impact: n.impact,
+          phase: n.phase,
+          status: n.status,
+        }));
+        setRawRisks(rawRisks);
+
         setSimulationRunning(true);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to analyze file');
@@ -41,7 +57,7 @@ export function FileUpload() {
         setLoading(false);
       }
     },
-    [setData, setLoading, setError, setSimulationRunning]
+    [setData, setRawRisks, setLoading, setError, setSimulationRunning, analysisSettings]
   );
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({

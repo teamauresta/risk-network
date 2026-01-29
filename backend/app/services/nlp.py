@@ -180,7 +180,7 @@ class NLPService:
         self,
         texts: list[str],
         labels: list[int],
-        top_n: int = 5,
+        top_n: int = 3,
     ) -> dict[int, list[str]]:
         """
         Extract top keywords for each cluster using TF-IDF.
@@ -216,9 +216,26 @@ class NLPService:
             # Average TF-IDF scores for this cluster
             cluster_tfidf = tfidf_matrix[indices].mean(axis=0).A1
 
-            # Get top terms
-            top_indices = cluster_tfidf.argsort()[::-1][:top_n]
-            keywords[label] = [feature_names[i] for i in top_indices]
+            # Get top terms (fetch more than needed to allow deduplication)
+            top_indices = cluster_tfidf.argsort()[::-1][:top_n * 3]
+            candidates = [feature_names[i] for i in top_indices]
+
+            # Deduplicate: remove single words that appear in bigrams
+            final_keywords = []
+            for kw in candidates:
+                if len(final_keywords) >= top_n:
+                    break
+                # Skip if this single word is part of an already-selected bigram
+                is_redundant = False
+                if ' ' not in kw:  # Single word
+                    for existing in final_keywords:
+                        if ' ' in existing and kw in existing.split():
+                            is_redundant = True
+                            break
+                if not is_redundant:
+                    final_keywords.append(kw)
+
+            keywords[label] = final_keywords
 
         return keywords
 

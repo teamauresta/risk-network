@@ -58,28 +58,28 @@ interface GraphState {
 }
 
 const defaultDisplaySettings: DisplaySettings = {
-  showLabels: true,
+  showLabels: false,  // Hide by default for large datasets - users can enable
   showSimilarityEdges: true,
-  showMembershipEdges: true,
-  nodeSize: 10,
-  clusterNodeSize: 18,
-  labelSize: 11,
+  showMembershipEdges: false,  // Hide membership edges by default - less clutter
+  nodeSize: 8,
+  clusterNodeSize: 20,
+  labelSize: 10,
   labelOffset: 4,
   searchQuery: '',
 };
 
 const defaultForceSettings: ForceSettings = {
-  repulsion: 100,
-  memberSpring: 0.3,
-  relevanceSpring: 0.1,
-  damping: 0.7,
-  collisionPadding: 8,
+  repulsion: 150,  // Higher repulsion for better separation
+  memberSpring: 0.4,
+  relevanceSpring: 0.15,
+  damping: 0.75,
+  collisionPadding: 10,
 };
 
 const defaultAnalysisSettings: AnalysisSettings = {
   minClusterSize: 3,
-  similarityThreshold: 0.5,
-  maxLinksPerRisk: 8,
+  similarityThreshold: 0.6,
+  maxLinksPerRisk: 5,
 };
 
 const defaultColorTheme: ColorTheme = {
